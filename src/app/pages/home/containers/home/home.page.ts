@@ -102,6 +102,7 @@ export class HomePage implements OnInit, OnDestroy {
     bookmark.country = this.cityWeather.city.country;
     bookmark.coord = this.cityWeather.city.coord;
     this.store.dispatch(fromHomeActions.toggleBookmark({ entity: bookmark }));
+
   }
 
 

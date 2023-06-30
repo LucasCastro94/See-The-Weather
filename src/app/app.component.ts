@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Title } from '@angular/platform-browser';
 import * as moment from 'moment-timezone';
 import 'moment/locale/pt-br';
 
@@ -10,7 +10,9 @@ import 'moment/locale/pt-br';
 })
 export class AppComponent {
 
-  constructor() {
+  constructor(title:Title) {
     moment.locale('pt-br');
+    title.setTitle('See the Weather')
   }
+
 }
